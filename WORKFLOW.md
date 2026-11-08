@@ -148,7 +148,8 @@
 
 - **`refine`**：在不改行为的前提下清理代码。
 - **`reclaim-code-entropy`**：找出多余的复杂度并安全删除。
-- **`improve-codebase-architecture`**（手动）：扫描适合深化的模块。
+- **`improve-codebase-architecture`**（手动）：扫描适合深化的模块，在对话里列出候选项。
+- **`architecture-report`**（手动）：把上面的候选项做成带前后对比图的网页。
 - **`codebase-design`**：设计模块接口时共用的一套术语。
 
 ### 4.4 协作与维护

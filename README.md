@@ -44,7 +44,7 @@ skill 按调用方式分为两类：
 - **[ask-matt](./skills/engineering/ask-matt/SKILL.md)**：不确定该用哪个 skill 或流程时，先问它，它会根据你的情况指出本仓库中合适的手动调用 skill。
 - **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)**：反复追问，同时构建项目的领域模型：厘清术语，并随时更新 `GLOSSARY.md` 和 ADR。
 - **[triage](./skills/engineering/triage/SKILL.md)**：按一套分诊状态推进 issue。
-- **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)**：扫描代码库中适合深化的模块，以可视化 HTML 报告呈现，再针对选中的一项逐步追问。
+- **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)**：扫描代码库中适合深化的模块，在对话里列出候选项，再针对选中的一项逐步追问。
 - **[setup-matt-pocock-skills](./skills/engineering/setup-matt-pocock-skills/SKILL.md)**：为仓库配置工程类 skill（issue tracker、分诊标签、领域文档布局）。每个仓库在使用其他工程类 skill 之前运行一次。
 - **[to-spec](./skills/engineering/to-spec/SKILL.md)**：把当前对话整理成 spec 并发布到 issue tracker。不再提问，只综合已经讨论过的内容。
 - **[to-tickets](./skills/engineering/to-tickets/SKILL.md)**：把计划、spec 或对话拆成一组可以端到端交付的最小 ticket，每个 ticket 声明自己的阻塞关系。阻塞关系可以写成本地文件里的文字，也可以用 tracker 原生的阻塞链接。
@@ -84,6 +84,7 @@ skill 按调用方式分为两类：
 
 - **[are-you-sure](./skills/non-matt/are-you-sure/SKILL.md)**：采纳软件工程或技术项目的方案之前，先对它提出质疑。手动调用。
 - **[ste](./skills/non-matt/ste/SKILL.md)**：按 ASD-STE100（简化技术英语）的原则，用中文汇报结果。启用后持续生效，直到用户停止。
+- **[architecture-report](./skills/non-matt/architecture-report/SKILL.md)**：把对话里的架构评审候选项渲染成一份可视化 HTML 报告，每个候选项带前后对比图。手动调用。
 - **[refine](./skills/non-matt/refine/SKILL.md)**：从质量、性能和复用三个角度评审 diff、提交或指定区域，然后做有针对性的、不改变行为的清理。
 - **[reclaim-code-entropy](./skills/non-matt/reclaim-code-entropy/SKILL.md)**：找出、排序并安全移除无意中产生的代码复杂度。删除前必须有证据证明确实没有使用者。
 

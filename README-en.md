@@ -39,7 +39,7 @@ Skills for code work.
 - **[ask-matt](./skills/engineering/ask-matt/SKILL.md)**: Ask which skill or flow fits your situation. A router over the user-invoked skills in this repo.
 - **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)**: Grilling session that also builds your project's domain model, sharpening terminology and updating `GLOSSARY.md` and ADRs inline.
 - **[triage](./skills/engineering/triage/SKILL.md)**: Move issues through a state machine of triage roles.
-- **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)**: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
+- **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)**: Scan a codebase for deepening opportunities, list them in the conversation, then grill through whichever one you pick.
 - **[setup-matt-pocock-skills](./skills/engineering/setup-matt-pocock-skills/SKILL.md)**: Configure this repo for the engineering skills (issue tracker, triage labels, domain doc layout). Run once per repo before using the other engineering skills.
 - **[to-spec](./skills/engineering/to-spec/SKILL.md)**: Turn the current conversation into a spec and publish it to the issue tracker. No interview, just synthesizes what you've already discussed.
 - **[to-tickets](./skills/engineering/to-tickets/SKILL.md)**: Break any plan, spec, or conversation into a set of tracer-bullet tickets, each declaring its blocking edges, written as text in a local file, or as native blocking links on a real tracker.
@@ -79,6 +79,7 @@ Personal skills, not from Matt's repo. Upstream sync ignores them.
 
 - **[are-you-sure](./skills/non-matt/are-you-sure/SKILL.md)**: Challenge a proposed software-engineering or technical-project solution before adopting it. User-invoked.
 - **[ste](./skills/non-matt/ste/SKILL.md)**: Report results by the ASD-STE100 (Simplified Technical English) principles, in Chinese. Stays active until stopped.
+- **[architecture-report](./skills/non-matt/architecture-report/SKILL.md)**: Render the architecture-review candidates in the conversation as a visual HTML report, with a before/after diagram per candidate. User-invoked.
 - **[refine](./skills/non-matt/refine/SKILL.md)**: Review a diff, commit, or named area for quality, performance, and reuse, then apply targeted behavior-preserving cleanup.
 - **[reclaim-code-entropy](./skills/non-matt/reclaim-code-entropy/SKILL.md)**: Find, rank, and safely remove accidental codebase complexity, with evidence of real consumers before any deletion.
 
