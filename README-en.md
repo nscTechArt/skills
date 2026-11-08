@@ -78,7 +78,7 @@ General workflow tools, not code-specific.
 Personal skills, not from Matt's repo. Upstream sync ignores them.
 
 - **[are-you-sure](./skills/non-matt/are-you-sure/SKILL.md)**: Challenge a proposed software-engineering or technical-project solution before adopting it. User-invoked.
-- **[ste](./skills/non-matt/ste/SKILL.md)**: Report results by the ASD-STE100 (Simplified Technical English) principles, in Chinese. Stays active until stopped.
+- **[ste](./skills/non-matt/ste/SKILL.md)**: Report results by the ASD-STE100 (Simplified Technical English) principles, in Chinese. Stays active until stopped. User-invoked.
 - **[architecture-report](./skills/non-matt/architecture-report/SKILL.md)**: Render the architecture-review candidates in the conversation as a visual HTML report, with a before/after diagram per candidate. User-invoked.
 - **[refine](./skills/non-matt/refine/SKILL.md)**: Review a diff, commit, or named area for quality, performance, and reuse, then apply targeted behavior-preserving cleanup.
 - **[reclaim-code-entropy](./skills/non-matt/reclaim-code-entropy/SKILL.md)**: Find, rank, and safely remove accidental codebase complexity, with evidence of real consumers before any deletion.

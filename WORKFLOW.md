@@ -161,4 +161,4 @@
 - **`wayfinder`**（手动）：把过大的工作拆成决策地图。
 - **`setup-matt-pocock-skills`**（手动）：为新仓库做一次性配置。
 - **`writing-for-agents`**：写 skill 与 AGENTS.md 的方法。
-- **`ste`**：输入 `/ste` 后，用简化技术中文汇报。
+- **`ste`**（手动）：输入 `/ste` 后，用简化技术中文汇报。

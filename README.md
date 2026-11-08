@@ -83,7 +83,7 @@ skill 按调用方式分为两类：
 个人维护的 skill，不来自 Matt 的仓库。上游同步会忽略它们。
 
 - **[are-you-sure](./skills/non-matt/are-you-sure/SKILL.md)**：采纳软件工程或技术项目的方案之前，先对它提出质疑。手动调用。
-- **[ste](./skills/non-matt/ste/SKILL.md)**：按 ASD-STE100（简化技术英语）的原则，用中文汇报结果。启用后持续生效，直到用户停止。
+- **[ste](./skills/non-matt/ste/SKILL.md)**：按 ASD-STE100（简化技术英语）的原则，用中文汇报结果。启用后持续生效，直到用户停止。手动调用。
 - **[architecture-report](./skills/non-matt/architecture-report/SKILL.md)**：把对话里的架构评审候选项渲染成一份可视化 HTML 报告，每个候选项带前后对比图。手动调用。
 - **[refine](./skills/non-matt/refine/SKILL.md)**：从质量、性能和复用三个角度评审 diff、提交或指定区域，然后做有针对性的、不改变行为的清理。
 - **[reclaim-code-entropy](./skills/non-matt/reclaim-code-entropy/SKILL.md)**：找出、排序并安全移除无意中产生的代码复杂度。删除前必须有证据证明确实没有使用者。
