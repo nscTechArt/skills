@@ -25,7 +25,14 @@ The route most work travels. You have an idea and want it built.
    - **Yes** → **`/to-spec`** (turn the thread into a spec), then **`/to-tickets`** to split it into tracer-bullet tickets, each declaring its **blocking edges**. Then run **`/implement`** per ticket, **`/clear`ing context between each one**. On a local tracker that's one file per ticket under `.scratch/<feature>/issues/`, worked blockers-first by hand; on a real tracker the edges become native blocking links, so any ticket whose blockers are done can be grabbed. Each ticket is self-contained, so the last one's context is disposable.
    - **No** → **`/implement`** right here, in the same context window.
 
-   Either way, the code gets built by driving **`/tdd`** (one red-green slice at a time) and closes out with **`/code-review`**, a two-axis review (Standards + Spec) of the diff. `/implement` runs both per ticket. Reach for **`/tdd`** on its own when you just want to build a concrete behaviour test-first without a full spec, and **`/code-review`** on its own whenever you want to review a branch or PR against a fixed point.
+   Either way, `/implement` builds the code and reviews it:
+   - **`/tdd`** drives the build, one red-green slice at a time.
+   - **`/code-review`** closes it out: a two-axis review (Standards + Spec) of the diff.
+   - The result stays uncommitted in the working tree, and `/code-review` reviews it against `HEAD`. Commit each ticket before starting the next, or the next review will include the previous ticket's changes.
+
+   Reach for the two on their own when you need them alone:
+   - **`/tdd`** to build a concrete behaviour test-first without a full spec.
+   - **`/code-review`** to review a branch, a PR, or uncommitted work against a fixed point.
 
 4. **`/retro`** closes the loop. After a build, and especially one that went sideways, it looks back over the session and suggests changes to the agent's **environment**, not the code: navigation pointers, automated checks, the coding standards `/code-review` enforces, steering files, tooling. Mechanical mistakes become deterministic checks; judgement calls become coding standards. The next build then starts from a better environment.
 

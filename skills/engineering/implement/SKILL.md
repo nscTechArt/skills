@@ -12,6 +12,6 @@ Call the Skill tool with "tdd" where possible, at pre-agreed seams.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Once done, call the Skill tool with "code-review" to review the work.
+Leave the changes in the working tree.
 
-Commit your work to the current branch.
+Once done, call the Skill tool with "code-review" to review the work. Give it the fixed point `HEAD` (it reviews the uncommitted working tree) and the spec or tickets you implemented as the spec, so it asks the user for neither.

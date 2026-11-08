@@ -48,7 +48,7 @@ skill 按调用方式分为两类：
 - **[setup-matt-pocock-skills](./skills/engineering/setup-matt-pocock-skills/SKILL.md)**：为仓库配置工程类 skill（issue tracker、分诊标签、领域文档布局）。每个仓库在使用其他工程类 skill 之前运行一次。
 - **[to-spec](./skills/engineering/to-spec/SKILL.md)**：把当前对话整理成 spec 并发布到 issue tracker。不再提问，只综合已经讨论过的内容。
 - **[to-tickets](./skills/engineering/to-tickets/SKILL.md)**：把计划、spec 或对话拆成一组可以端到端交付的最小 ticket，每个 ticket 声明自己的阻塞关系。阻塞关系可以写成本地文件里的文字，也可以用 tracker 原生的阻塞链接。
-- **[implement](./skills/engineering/implement/SKILL.md)**：实现 spec 或一组 ticket 所描述的工作：在事先约定的测试接缝上用 `/tdd` 推进，提交前用 `/code-review` 收尾。
+- **[implement](./skills/engineering/implement/SKILL.md)**：实现 spec 或一组 ticket 所描述的工作：在事先约定的测试接缝上用 `/tdd` 推进，收尾时用 `/code-review` 评审。
 - **[wayfinder](./skills/engineering/wayfinder/SKILL.md)**：规划一个单次 Agent 会话容纳不下的大型工作：在 issue tracker 上建立一张共享的决策 ticket 地图，逐个解决，直到通往目标的路径清晰。
 - **[retro](./skills/engineering/retro/SKILL.md)**：会话结束后，针对编码 Agent 的工作环境（导航、自动检查、编码规范、指令文件、工具）提出改进建议，按严重程度从高到低排列。
 
@@ -60,7 +60,7 @@ skill 按调用方式分为两类：
 - **[tdd](./skills/engineering/tdd/SKILL.md)**：测试驱动开发，按红、绿、重构的循环，每次完成一个垂直切片，用来开发功能或修复缺陷。
 - **[domain-modeling](./skills/engineering/domain-modeling/SKILL.md)**：主动构建并打磨项目的领域模型：对照术语表质疑用词，用边界场景做压力测试，并随时更新 `GLOSSARY.md` 和 ADR。
 - **[codebase-design](./skills/engineering/codebase-design/SKILL.md)**：设计深模块的共用规范和术语：小接口背后有大量行为，放在干净的接缝上，并能通过该接口测试。
-- **[code-review](./skills/engineering/code-review/SKILL.md)**：评审某个固定点以来的 diff，分两个维度：**规范**（是否遵循仓库的编码规范，外加 Fowler 的代码坏味道清单）和 **Spec**（是否忠实实现了最初的 issue 或 spec）。两个维度由并行的子 Agent 各自完成，互不干扰。
+- **[code-review](./skills/engineering/code-review/SKILL.md)**：评审某个固定点以来的 diff（固定点为 `HEAD` 时评审未提交的工作区改动），分两个维度：**规范**（是否遵循仓库的编码规范，外加 Fowler 的代码坏味道清单）和 **Spec**（是否忠实实现了最初的 issue 或 spec）。两个维度由并行的子 Agent 各自完成，互不干扰。
 
 ### 效率类（productivity）
 
