@@ -1,12 +1,16 @@
 This is a personal fork of [mattpocock/skills](https://github.com/mattpocock/skills). It is for my own use: no releases, no plugin, no marketplace. `upstream` is the remote for Matt's repo.
 
-Skills are organized into bucket folders under `skills/`:
+Installable skills are organized into bucket folders under `skills/`:
 
 - `engineering/`: Matt's skills for daily code work. Edited in place when I need to change one.
 - `productivity/`: Matt's skills for daily non-code workflow tools. Edited in place when I need to change one.
 - `non-matt/`: my own skills. Upstream sync ignores this folder.
 
+Repo-only skills live under `.agents/skills/`: they work only inside this repo and are never installed elsewhere.
+
 The root `README.md` (Chinese) and `README-en.md` (English) are the only skill indexes and must stay in sync: each Reference section lists every skill with a one-line description, with the skill name linked to its `SKILL.md`. Whenever one changes, change the other. Bucket folders have no `README.md`. `engineering/` and `productivity/` group entries into **User-invoked** and **Model-invoked**; `non-matt/` uses a flat list.
+
+A skill that only works inside this repo, such as `sync-upstream`, lives under `.agents/skills/`, stays out of both READMEs and out of `WORKFLOW.md`, and is never installed: its own `SKILL.md` is its only description.
 
 Every `SKILL.md` is either user-invoked (`disable-model-invocation: true`, reachable only by the human) or model-invoked (model- or user-reachable). See [.agents/invocation.md](./.agents/invocation.md).
 
